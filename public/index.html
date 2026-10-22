@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>WealthLens</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="এফডিআর, ডিপিএস, সঞ্চয়পত্র না মিউচুয়াল ফান্ড? কর কাটার পর কোনটায় হাতে বেশি থাকে, নিজেই হিসাব করে দেখুন।">
+<meta property="og:title" content="WealthLens · টাকা কোথায় রাখলে বেশি বাড়বে?">
+<meta property="og:description" content="এফডিআর, ডিপিএস, সঞ্চয়পত্র ও মিউচুয়াল ফান্ডের তুলনা। লক্ষ্য পূরণ ও কর বাঁচানোর হিসাব। শরিয়াহসম্মত বিকল্পসহ।">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#111214">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:image" content="https://wealthlens-ochre.vercel.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="mesh" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+
+<header class="top wrap">
+  <a class="brand" href="#" aria-label="WealthLens">
+    <svg class="mark" viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="20.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M22 13.8L38.45 23.3M29.1 17.9L29.1 36.89M29.1 26.1L12.65 35.6M22 30.2L5.55 20.7M14.9 26.1L14.9 7.11M14.9 17.9L31.35 8.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+          <text x="22" y="25.6" text-anchor="middle" font-family="Hind Siliguri, sans-serif" font-weight="600" font-size="10" fill="currentColor">৳</text>
+        </svg>
+    <span class="wordmark"><span class="wm-name">WealthLens</span><span class="wm-tag" data-i="tagline"></span></span>
+  </a>
+  <button type="button" id="langBtn" class="lang glass" aria-label="Change language">English</button>
+</header>
+
+<section class="hero wrap">
+  <p class="eyebrow-chip glass" data-i="heroEyebrow"></p>
+  <h1 id="heroTitle"></h1>
+  <p class="hero-sub" data-i="heroSub"></p>
+</section>
+
+<nav class="tabbar" aria-label="Calculators">
+  <div class="tabs glass" role="tablist">
+    <span class="pill" aria-hidden="true"></span>
+      <button type="button" role="tab" data-tab="compare"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V11M12 19V5M19 19v-6" /></svg><span data-i="tab_compare"></span></button>
+      <button type="button" role="tab" data-tab="goal"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.9" fill="currentColor"/></svg><span data-i="tab_goal"></span></button>
+      <button type="button" role="tab" data-tab="tax"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 14l6-6M9.5 8.5h.01M14.5 13.5h.01"/></svg><span data-i="tab_tax"></span></button>
+      <button type="button" role="tab" data-tab="biz"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></svg><span data-i="tab_biz"></span></button>
+      <button type="button" role="tab" data-tab="guide"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20"/></svg><span data-i="tab_guide"></span></button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="shariah-bar">
+    <label class="switch" for="shariah">
+      <input type="checkbox" id="shariah">
+      <span class="track" aria-hidden="true"><span class="knob"></span></span>
+      <span class="switch-text">
+        <svg class="crescent" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3.2A9 9 0 1 0 20.8 15 7.2 7.2 0 0 1 15.5 3.2Z" fill="currentColor"/></svg>
+        <span data-i="shariahLabel"></span>
+      </span>
+    </label>
+    <p id="shariahNote" class="note" hidden data-i="shariahOnNote"></p>
+  </div>
+
+  <section id="panel" class="panel" role="tabpanel" aria-live="polite"></section>
+
+  <section class="lead glass" id="lead">
+    <div class="lead-copy">
+      <p class="eyebrow" data-i="leadEyebrow"></p>
+      <h2 data-i="leadHead"></h2>
+      <p data-i="leadSub"></p>
+    </div>
+    <form id="leadForm" novalidate>
+      <div class="field">
+        <label for="leadName" data-i="leadName"></label>
+        <input id="leadName" name="name" type="text" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="leadPhone" data-i="leadPhone"></label>
+        <input id="leadPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX">
+      </div>
+      <div class="field">
+        <label for="leadTopic" data-i="leadTopic"></label>
+        <select id="leadTopic" name="topic">
+          <option value="plan" data-i="topic_plan"></option>
+          <option value="tax" data-i="topic_tax"></option>
+          <option value="shariah" data-i="topic_shariah"></option>
+          <option value="biz" data-i="topic_biz"></option>
+        </select>
+      </div>
+      <label class="check" for="leadConsent">
+        <input id="leadConsent" type="checkbox">
+        <span data-i="leadConsent"></span>
+      </label>
+      <p id="leadError" class="error" role="alert" hidden></p>
+      <div class="lead-actions">
+        <button type="submit" class="btn wa-btn" id="leadSubmit">
+          <span class="wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.8l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm4.4 11.7c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.6 2.6 0 0 0-.8 1.9 4.5 4.5 0 0 0 1 2.4 10.3 10.3 0 0 0 4 3.5c1.5.6 2 .7 2.8.6a2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3Z"/></svg></span>
+          <span data-i="leadWaSend"></span>
+        </button>
+      </div>
+      <div id="leadDone" class="lead-done" hidden></div>
+    </form>
+  </section>
+
+  <section class="advisor glass" aria-labelledby="advisorName">
+    <div class="adv-main">
+      <p class="eyebrow" data-i="advEyebrow"></p>
+      <div class="adv-id">
+        <div class="adv-photo"><img src="advisor.jpg" alt="" width="96" height="96" onerror="this.parentNode.remove()"></div>
+        <div>
+          <h2 class="advisor-name" id="advisorName"></h2>
+          <p class="advisor-role" id="advisorRole"></p>
+          <p class="advisor-co" id="advisorCo"></p>
+        </div>
+      </div>
+      <p class="adv-about" data-i="advAbout"></p>
+      <div class="adv-actions">
+        <a class="btn wa-btn" id="advWa" href="#" target="_blank" rel="noopener">
+          <span class="wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.8l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm4.4 11.7c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.6 2.6 0 0 0-.8 1.9 4.5 4.5 0 0 0 1 2.4 10.3 10.3 0 0 0 4 3.5c1.5.6 2 .7 2.8.6a2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3Z"/></svg></span>
+          <span data-i="advWaBtn"></span>
+        </a>
+        <a class="btn ghost fb-btn" id="advFb" href="#" target="_blank" rel="noopener" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.3a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.1H7.7v3h2.6V21h3.2Z"/></svg>
+          <span data-i="advFbBtn"></span>
+        </a>
+      </div>
+    </div>
+    <div class="adv-side">
+      <p class="adv-help-h" data-i="advHelpHead"></p>
+      <ul class="adv-help" id="advHelp"></ul>
+      <figure class="adv-qr">
+        <canvas id="advQr" width="132" height="132" aria-label="WhatsApp QR code"></canvas>
+        <figcaption data-i="advQr"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p data-i="disclaimer"></p>
+    <p id="sourcesLine"></p>
+  </footer>
+</main>
+
+<a class="fab glass" id="fab" href="#" target="_blank" rel="noopener">
+  <span class="wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.8l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.6 2.6 0 0 0-.8 1.9 4.5 4.5 0 0 0 1 2.4 10.3 10.3 0 0 0 4 3.5c1.5.6 2 .7 2.8.6a2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3Z"/></svg></span>
+  <span data-i="fab"></span>
+</a>
+
+<div class="modal" id="shareModal" hidden>
+  <div class="modal-box glass" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+    <div class="modal-head">
+      <h3 id="shareTitle" data-i="shareTitle"></h3>
+      <button type="button" class="icon-btn" id="shareClose" data-i-aria="close">✕</button>
+    </div>
+    <img id="shareImg" alt="">
+    <p class="note" data-i="shareHint"></p>
+    <div class="modal-actions">
+      <button type="button" class="btn primary" id="shareNow" data-i="shareNow"></button>
+      <a class="btn ghost" id="saveImg" download="wealthlens.png" data-i="saveImg"></a>
+    </div>
+  </div>
+</div>
+
+<script src="qrcode.js"></script>
+<script src="config.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<!-- Vercel Web Analytics: turn it on in the Vercel dashboard → Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

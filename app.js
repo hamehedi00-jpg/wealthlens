@@ -8,7 +8,7 @@
     shariah: false,
     tab: "compare",
     cmp: { mode: "lump", lump: 500000, monthly: 5000, years: 5, bracket: 0.10, risk: "low", early: false, exitM: 12 },
-    goal: { preset: "edu", target: 1000000, years: 10, inflate: true },
+    goal: { preset: "edu", target: 1000000, years: 10, inflate: false },
     tax: { income: 900000, salaried: true, special: false, invested: 0 },
     biz: { amount: 2000000, months: 6, place: "current" },
     summary: ""
